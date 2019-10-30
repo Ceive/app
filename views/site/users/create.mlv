@@ -1,0 +1,18 @@
+<div>
+	<h4>Здесь мы создаем пользователя</h4>
+
+	<form>
+		<div>
+			<label>Имя</label><br/>
+			<input type="text" name="name" style={{width: '100%'}}/>
+		</div>
+		<div>
+			<label>Фамилия</label><br/>
+			<input type="text" name="family" style={{width: '100%'}}/>
+		</div>
+		<div>
+			<label>Дата рождения</label><br/>
+			<input type="date" name="birth_date" style={{width: '100%'}}/>
+		</div>
+	</form>
+</div>

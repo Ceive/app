@@ -1,0 +1,17 @@
+
+import {A} from '../a';
+
+{{:block:}}
+<header className="header">
+	{{:holder name='header':}}
+		<div className="item"><A href="/users" layers={ [ 'site/index', 'site/users', 'site/users/list' ] }>Пользователи</A></div>
+		<div className="item"><A href="/users/1" layers={ [ 'site/index', 'site/users', {key: 'site/users/index', scope: {user__id: 1} } ] }>Страница пользователя</A></div>
+	{{:/holder:}}
+</header>
+<div className="content">
+	{{:holder/:}}
+</div>
+<footer className="footer">
+	{{:holder name='footer'/:}}
+</footer>
+{{:/block:}}

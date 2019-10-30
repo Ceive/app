@@ -1,0 +1,18 @@
+
+import Block from './a';
+
+
+{{:block:}}
+<div>
+	{{:holder name='top-navigation':}}
+	<section className="top-navigation">
+		<section className="top-navigation-items" object={ Block }>
+			{{:holder name='items'/:}}
+		</section>
+	</section>
+	{{:/holder:}}
+</div>
+<section className="center-content">
+	{{:holder/:}}
+</section>
+{{:/block:}}

@@ -1,0 +1,104 @@
+.CheckMediaUI-indicationBar-segment {
+	flex: 1;
+	height: 20px;
+	min-width: 10px;
+	margin: 1px;
+	border-radius: 3px;
+	background: lightgray;
+}
+
+.CheckMediaUI-indicationBar {
+	display: flex;
+	width: 100%;
+}
+
+.CheckMediaUI-indicationBar-segment.CheckMediaUI-indicationBar-segment-active {
+	background: green;
+}
+
+.CheckMediaUI-block {
+	width: 50%;
+	display: flex;
+
+	flex-direction: column;
+}
+
+section.CheckMediaUI {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 700px;
+}
+
+
+/** Answer Buttons */
+.CheckMediaUI button {
+
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 2px solid lightgray;
+	margin-left: 5px;
+	background: transparent;
+}
+.CheckMediaUI button:hover {
+	border: 2px solid #60838e;
+	cursor:pointer;
+}
+.CheckMediaUI button:first-child {
+	margin-left: 0;
+}
+
+
+/** Button Yes*/
+.CheckMediaUI button.CheckMediaUI-answer-yes {
+	background: #76bcf3;
+	color: white;
+}
+.CheckMediaUI button.CheckMediaUI-answer-yes:hover {
+	border: 2px solid #49a5c1;
+	cursor:pointer;
+}
+
+
+/** Button No */
+.CheckMediaUI button.CheckMediaUI-answer-no {
+	background: #8e8e8e;
+	color: white;
+}
+.CheckMediaUI button.CheckMediaUI-answer-no:hover {
+	border: 2px solid #777979;
+	cursor:pointer;
+}
+
+.CheckMediaUI-blockInner {
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid lightgray;
+	flex: 1;
+}
+
+.CheckMediaUI-block {
+	padding: 10px;
+	box-sizing:  border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.CheckMediaUI-successTest {
+	color: #3e983e;
+	font-size: 22px;
+}
+
+.CheckMediaUI-errorTest {
+	color: #d6630f;
+}
+
+.CheckMediaUI-failureTest {
+	color: #88671a;
+}
+
+.CheckMediaUI h3 {
+	margin: 0;
+	color: #067f9c;
+	margin-bottom: 10px;
+}

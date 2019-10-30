@@ -1,0 +1,26 @@
+{
+  "name": "ceive.app",
+  "description": "",
+  "version": "0.0.1",
+  "devDependencies": {
+    "Detect.js": "git+https://github.com/darcyclarke/Detect.js.git",
+    "babel-core": "",
+    "babel-loader": "",
+    "babel-plugin-transform-class-properties": "",
+    "babel-preset-env": "",
+    "babel-preset-react": "",
+    "css-loader": "^0.28.11",
+    "file-loader": "",
+    "style-loader": "^0.21.0",
+    "url-loader": "",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "react": "",
+    "react-dom": ""
+  },
+  "scripts": {
+    "build": "webpack --mode development"
+  }
+}

@@ -1,0 +1,33 @@
+import CheckMediaUI, { CheckMediaUI_Ru } from '../../inc/CheckMediaUI';
+
+let mediaState = new CheckMediaUI.MediaState;
+
+class MediaStateVisor extends React.Component{
+
+	componentWillMount(){
+		this.props.mediaState.onChange = () => {
+			this.setState({ isComplete: this.props.mediaState.isComplete() });
+		};
+	}
+
+	render(){
+		if(this.isComplete){
+			return null;
+		}else{
+			return <div>Пройдите тестирование, чтобы продолжить</div>;
+		}
+	}
+}
+
+
+{{:block:}}
+<span>
+Страница пользователя с айди { scope.user__id }
+</span>
+<div>
+	<CheckMediaUI_Ru mediaState={mediaState}/>
+</div>
+<div>
+	<MediaStateVisor mediaState={mediaState}/>
+</div>
+{{:/block:}}

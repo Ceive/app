@@ -1,0 +1,3 @@
+[20-May-2018 16:18:17 Europe/Moscow] PHP Fatal error:  Call to undefined method Ceive\App\Logger\Logger::dubug() in D:\OpenServer\domains\ceive.app\tests\Logger.php on line 19
+[20-May-2018 16:18:50 Europe/Moscow] PHP Fatal error:  Call to undefined function Ceive\App\Logger\get_call_stack() in D:\OpenServer\domains\ceive.app\src\Logger\Logger.php on line 17
+[20-May-2018 16:19:26 Europe/Moscow] PHP Fatal error:  Call to undefined function get_call_stack() in D:\OpenServer\domains\ceive.app\src\Logger\Logger.php on line 17

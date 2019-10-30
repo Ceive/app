@@ -1,0 +1,9 @@
+<header className="header">
+	{{:holder name='header'/:}}
+</header>
+<div className="content">
+	{{:holder/:}}
+</div>
+<footer className="footer">
+	{{:holder name='footer'/:}}
+</footer>

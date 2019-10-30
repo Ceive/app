@@ -1,0 +1,7 @@
+
+{{:block:}}
+<div className="users">
+	<div>Раздел пользователей</div>
+	<div>{{:holder/:}}</div>
+</div>
+{{:/block:}}

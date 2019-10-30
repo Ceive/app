@@ -1,0 +1,26 @@
+
+import {A} from '../../a';
+
+{{:block:}}
+<div>
+	<span>Здесь должны быть пользователи аравой с фильтрами и сортировщиками )))</span>
+	{ scope.users.map((user)=>{
+		return <div>
+			<div>ID: {user.id}</div>
+			<A href={ "users/" + user.id } layers={ [
+				'site/index',
+				'site/users',
+				{
+					key: 'site/users/index',
+					scope: {
+						user__id: user.id
+					}
+				}
+			]} >Name: {user.name}</A>
+		</div>;
+	}) }
+</div>
+{{:/block:}}
+{{:block name="header" type="append":}}
+	<div className="item"><A href="/users/create" layers={ [ 'site/index', 'site/users', 'site/users/create' ] }>Создать пользователя</A></div>
+{{:/block:}}
